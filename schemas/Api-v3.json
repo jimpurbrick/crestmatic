@@ -1,0 +1,591 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "alliances": {
+            "description": "List of all open alliances",
+            "id": "alliances",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "authEndpoint": {
+            "description": "The URI to use for authentication",
+            "id": "authEndpoint",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "battleTheatres": {
+            "description": "Reference battle theatres",
+            "id": "battleTheatres",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "bloodlines": {
+            "description": "Reference to bloodlines",
+            "id": "bloodlines",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "channels": {
+            "description": "Reference to chat channels",
+            "id": "channels",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "clients": {
+            "id": "clients",
+            "properties": {
+                "dust": {
+                    "description": "Duct 514 bootstrapping endpoints",
+                    "id": "dust",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "eve": {
+                    "description": "Eve Online bootstrapping endpoints",
+                    "id": "eve",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "dust",
+                "eve"
+            ],
+            "type": "object"
+        },
+        "corporationRoles": {
+            "description": "Reference To Corporation Roles",
+            "id": "corporationRoles",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "corporations": {
+            "description": "Reference to Corporations",
+            "id": "corporations",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "crestEndpoint": {
+            "description": "The server authoritative crest endpoint. After this request, make all requests to this host",
+            "id": "crestEndpoint",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "decode": {
+            "description": "endpoint to decode the current oAuth token. Will return character/user links",
+            "id": "decode",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "incursions": {
+            "description": "List of all active Incursions",
+            "id": "incursions",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "industry": {
+            "id": "industry",
+            "properties": {
+                "facilities": {
+                    "description": "List of all public industrial facilities.",
+                    "id": "facilities",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "specialities": {
+                    "description": "List of all specialities that workers can have",
+                    "id": "specialities",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "systems": {
+                    "description": "List of all systems and modifiers on them",
+                    "id": "systems",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "teams": {
+                    "description": "List of all industry teams that are active in the world",
+                    "id": "teams",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "teamsInAuction": {
+                    "description": "List of all industry teams that are in auction",
+                    "id": "teamsInAuction",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "facilities",
+                "specialities",
+                "teamsInAuction",
+                "systems",
+                "teams"
+            ],
+            "type": "object"
+        },
+        "itemCategories": {
+            "description": "Inventory categories for the EVE universe",
+            "id": "itemCategories",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "itemGroups": {
+            "description": "Inventory groups for the EVE universe",
+            "id": "itemGroups",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "itemTypes": {
+            "description": "Item types in the EVE universe",
+            "id": "itemTypes",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "map": {
+            "description": "Reference to the map resource",
+            "id": "map",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "marketGroups": {
+            "description": "Reference to the market groups",
+            "id": "marketGroups",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "marketPrices": {
+            "description": "Average and adjusted prices for types.",
+            "id": "marketPrices",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "marketTypes": {
+            "description": "Reference to the types that is available on the market",
+            "id": "marketTypes",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "motd": {
+            "id": "motd",
+            "properties": {
+                "dust": {
+                    "description": "Message of the day for Dust 514",
+                    "id": "dust",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "eve": {
+                    "description": "Message of the day for Eve Online",
+                    "id": "eve",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                },
+                "server": {
+                    "description": "Global message of the day",
+                    "id": "server",
+                    "properties": {
+                        "href": {
+                            "id": "href",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "href"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "dust",
+                "eve",
+                "server"
+            ],
+            "type": "object"
+        },
+        "races": {
+            "description": "Reference to races",
+            "id": "races",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "regions": {
+            "description": "Reference to universe regions",
+            "id": "regions",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "serverName": {
+            "description": "The server name",
+            "id": "serverName",
+            "type": "string"
+        },
+        "serverVersion": {
+            "description": "The server version",
+            "id": "serverVersion",
+            "type": "string"
+        },
+        "serviceStatus": {
+            "description": "Live status for various components. States are online/vip/offline",
+            "id": "serviceStatus",
+            "properties": {
+                "dust": {
+                    "description": "Dust 514 status",
+                    "id": "dust",
+                    "type": "string"
+                },
+                "eve": {
+                    "description": "Eve Online status",
+                    "id": "eve",
+                    "type": "string"
+                },
+                "server": {
+                    "description": "Server status",
+                    "id": "server",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "dust",
+                "eve",
+                "server"
+            ],
+            "type": "object"
+        },
+        "time": {
+            "description": "Reference to the Time resource",
+            "id": "time",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "tournaments": {
+            "description": "EVE Online tournaments resource",
+            "id": "tournaments",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "userCounts": {
+            "id": "userCounts",
+            "properties": {
+                "dust": {
+                    "description": "The current count of online users for Dust 514",
+                    "id": "dust",
+                    "type": "integer"
+                },
+                "eve": {
+                    "description": "The current count of online users for Eve Online",
+                    "id": "eve",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "dust",
+                "eve"
+            ],
+            "type": "object"
+        },
+        "virtualGoodStore": {
+            "description": "Link to the virtual good store",
+            "id": "virtualGoodStore",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "wars": {
+            "description": "List of all active wars",
+            "id": "wars",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "motd",
+        "crestEndpoint",
+        "corporationRoles",
+        "itemGroups",
+        "channels",
+        "corporations",
+        "alliances",
+        "itemTypes",
+        "decode",
+        "battleTheatres",
+        "marketPrices",
+        "itemCategories",
+        "regions",
+        "bloodlines",
+        "marketGroups",
+        "tournaments",
+        "map",
+        "serverVersion",
+        "wars",
+        "incursions",
+        "races",
+        "authEndpoint",
+        "serviceStatus",
+        "userCounts",
+        "industry",
+        "clients",
+        "time",
+        "marketTypes",
+        "serverName"
+    ],
+    "type": "object"
+}
