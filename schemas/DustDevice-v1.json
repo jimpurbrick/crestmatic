@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "macAddress": {
+            "id": "macAddress",
+            "type": "string"
+        },
+        "psidHigh": {
+            "id": "psidHigh",
+            "type": "integer"
+        },
+        "psidLow": {
+            "id": "psidLow",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "psidHigh",
+        "macAddress",
+        "psidLow"
+    ],
+    "type": "object"
+}

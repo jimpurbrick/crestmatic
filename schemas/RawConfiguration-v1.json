@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "allowUserCorporation": {
+            "description": "Use user corporations",
+            "id": "allowUserCorporation"
+        },
+        "remoteLogConfig": {
+            "description": "Remote logging configuration info.",
+            "id": "remoteLogConfig",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "sentryDSN": {
+            "description": "The Sentry DSN to use or empty string if none",
+            "id": "sentryDSN",
+            "type": "string"
+        }
+    },
+    "required": [
+        "allowUserCorporation",
+        "sentryDSN"
+    ],
+    "type": "object"
+}
