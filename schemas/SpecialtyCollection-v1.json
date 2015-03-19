@@ -8,37 +8,22 @@
                 "id": "0",
                 "properties": {
                     "description": {
-                        "description": "The market group's description",
+                        "description": "Description of the specialty",
                         "id": "description",
                         "type": "string"
                     },
                     "href": {
-                        "description": "A URI for this market group",
                         "id": "href",
                         "type": "string"
                     },
                     "name": {
-                        "description": "The market group's name",
+                        "description": "Name of the specialty",
                         "id": "name",
                         "type": "string"
                     },
-                    "parentGroup": {
-                        "description": "A reference to the parent market group",
-                        "id": "parentGroup",
-                        "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "href"
-                        ],
-                        "type": "object"
-                    },
-                    "types": {
-                        "description": "A reference to the list of types available in this market group",
-                        "id": "types",
+                    "race": {
+                        "description": "The race the bloodline belongs to.",
+                        "id": "race",
                         "properties": {
                             "href": {
                                 "id": "href",
@@ -54,7 +39,7 @@
                 "required": [
                     "href",
                     "name",
-                    "types",
+                    "race",
                     "description"
                 ],
                 "type": "object"

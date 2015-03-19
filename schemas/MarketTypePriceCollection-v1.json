@@ -7,55 +7,52 @@
             "items": {
                 "id": "0",
                 "properties": {
-                    "description": {
-                        "description": "The market group's description",
-                        "id": "description",
-                        "type": "string"
-                    },
-                    "href": {
-                        "description": "A URI for this market group",
-                        "id": "href",
-                        "type": "string"
-                    },
-                    "name": {
-                        "description": "The market group's name",
-                        "id": "name",
-                        "type": "string"
-                    },
-                    "parentGroup": {
-                        "description": "A reference to the parent market group",
-                        "id": "parentGroup",
+                    "adjustedPrice": {
+                        "description": "Adjusted price for the item",
+                        "id": "adjustedPrice",
                         "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            }
                         },
                         "required": [
-                            "href"
                         ],
                         "type": "object"
                     },
-                    "types": {
-                        "description": "A reference to the list of types available in this market group",
-                        "id": "types",
+                    "averagePrice": {
+                        "description": "Average market price for the item",
+                        "id": "averagePrice",
+                        "properties": {
+                        },
+                        "required": [
+                        ],
+                        "type": "object"
+                    },
+                    "type": {
+                        "id": "type",
                         "properties": {
                             "href": {
                                 "id": "href",
                                 "type": "string"
+                            },
+                            "id": {
+                                "description": "The items typeID",
+                                "id": "id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "description": "Name of the item",
+                                "id": "name",
+                                "type": "string"
                             }
                         },
                         "required": [
-                            "href"
+                            "href",
+                            "id",
+                            "name"
                         ],
                         "type": "object"
                     }
                 },
                 "required": [
-                    "href",
-                    "name",
-                    "types",
-                    "description"
+                    "type"
                 ],
                 "type": "object"
             },

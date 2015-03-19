@@ -7,51 +7,19 @@
             "items": {
                 "id": "0",
                 "properties": {
-                    "description": {
-                        "description": "The localized description for this infrastructure type.",
-                        "id": "description",
-                        "type": "string"
-                    },
                     "href": {
                         "id": "href",
                         "type": "string"
                     },
-                    "icon": {
-                        "description": "The image server icon for this infrastructure type.",
-                        "id": "icon",
-                        "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "href"
-                        ],
-                        "type": "object"
-                    },
-                    "id": {
-                        "id": "id",
-                        "type": "integer"
-                    },
                     "name": {
-                        "description": "The localized name for this infrastructure type.",
+                        "description": "Name of the region",
                         "id": "name",
                         "type": "string"
-                    },
-                    "price": {
-                        "description": "The ISK price for installing this infrastructure on a district.",
-                        "id": "price",
-                        "type": "integer"
                     }
                 },
                 "required": [
-                    "description",
-                    "price",
-                    "name",
                     "href",
-                    "id",
-                    "icon"
+                    "name"
                 ],
                 "type": "object"
             },

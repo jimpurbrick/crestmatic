@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "acceptApplications": {
+            "id": "acceptApplications",
+            "properties": {
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "description": {
+            "id": "description",
+            "type": "string"
+        },
+        "homepage": {
+            "id": "homepage",
+            "type": "string"
+        },
+        "logo": {
+            "id": "logo",
+            "properties": {
+                "color1": {
+                    "id": "color1",
+                    "type": "integer"
+                },
+                "color2": {
+                    "id": "color2",
+                    "type": "integer"
+                },
+                "color3": {
+                    "id": "color3",
+                    "type": "integer"
+                },
+                "shape1": {
+                    "id": "shape1",
+                    "type": "integer"
+                },
+                "shape2": {
+                    "id": "shape2",
+                    "type": "integer"
+                },
+                "shape3": {
+                    "id": "shape3",
+                    "type": "integer"
+                }
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "name": {
+            "id": "name",
+            "type": "string"
+        },
+        "taxRate": {
+            "id": "taxRate",
+            "properties": {
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "ticker": {
+            "id": "ticker",
+            "type": "string"
+        }
+    },
+    "required": [
+        "taxRate",
+        "name",
+        "acceptApplications",
+        "ticker",
+        "homepage",
+        "description"
+    ],
+    "type": "object"
+}

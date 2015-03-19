@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "items": {
+            "id": "items",
+            "items": {
+                "id": "0",
+                "properties": {
+                    "lang": {
+                        "id": "lang",
+                        "type": "string"
+                    },
+                    "string": {
+                        "id": "string",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "lang",
+                    "string"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "items"
+    ],
+    "type": "object"
+}

@@ -1,4 +1,68 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "/"
+    "id": "/",
+    "properties": {
+        "items": {
+            "id": "items",
+            "items": {
+                "id": "0",
+                "properties": {
+                    "name": {
+                        "description": "A label indicating the times this reinforce setting represents.",
+                        "id": "name",
+                        "type": "string"
+                    },
+                    "reinforce": {
+                        "description": "The possible reinforce hour value.",
+                        "id": "reinforce",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "reinforce",
+                    "name"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "next": {
+            "id": "next",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "pageCount": {
+            "id": "pageCount",
+            "type": "integer"
+        },
+        "previous": {
+            "id": "previous",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "totalCount": {
+            "id": "totalCount",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "items"
+    ],
+    "type": "object"
 }

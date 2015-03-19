@@ -1,0 +1,337 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "items": {
+            "id": "items",
+            "items": {
+                "id": "0",
+                "properties": {
+                    "activity": {
+                        "id": "activity",
+                        "type": "integer"
+                    },
+                    "auctionExpiryTime": {
+                        "description": "Time when auction expires",
+                        "id": "auctionExpiryTime",
+                        "type": "string"
+                    },
+                    "costModifier": {
+                        "description": "Increase of cost of doing a job in percentages",
+                        "id": "costModifier",
+                        "properties": {
+                        },
+                        "required": [
+                        ],
+                        "type": "object"
+                    },
+                    "creationTime": {
+                        "description": "Time that the team was created",
+                        "id": "creationTime",
+                        "type": "string"
+                    },
+                    "expiryTime": {
+                        "description": "Time when the team expires",
+                        "id": "expiryTime",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "ID of a Team.",
+                        "id": "id",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "name of the team",
+                        "id": "name",
+                        "type": "string"
+                    },
+                    "solarSystem": {
+                        "id": "solarSystem",
+                        "properties": {
+                            "href": {
+                                "description": "Link to the solar system resource.",
+                                "id": "href",
+                                "type": "string"
+                            },
+                            "id": {
+                                "description": "ID for solar system.",
+                                "id": "id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "description": "String name for solar system.",
+                                "id": "name",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "href",
+                            "id",
+                            "name"
+                        ],
+                        "type": "object"
+                    },
+                    "solarSystemBids": {
+                        "id": "solarSystemBids",
+                        "items": {
+                            "id": "0",
+                            "properties": {
+                                "bidAmount": {
+                                    "id": "bidAmount",
+                                    "properties": {
+                                    },
+                                    "required": [
+                                    ],
+                                    "type": "object"
+                                },
+                                "characterBids": {
+                                    "id": "characterBids",
+                                    "items": {
+                                        "id": "0",
+                                        "properties": {
+                                            "bidAmount": {
+                                                "id": "bidAmount",
+                                                "properties": {
+                                                },
+                                                "required": [
+                                                ],
+                                                "type": "object"
+                                            },
+                                            "character": {
+                                                "id": "character",
+                                                "properties": {
+                                                    "capsuleer": {
+                                                        "id": "capsuleer",
+                                                        "properties": {
+                                                            "href": {
+                                                                "id": "href",
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "href"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "href": {
+                                                        "id": "href",
+                                                        "type": "string"
+                                                    },
+                                                    "id": {
+                                                        "id": "id",
+                                                        "type": "integer"
+                                                    },
+                                                    "isNPC": {
+                                                        "id": "isNPC",
+                                                        "properties": {
+                                                        },
+                                                        "required": [
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "mercenary": {
+                                                        "id": "mercenary",
+                                                        "properties": {
+                                                            "href": {
+                                                                "id": "href",
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "href"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "name": {
+                                                        "id": "name",
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "name",
+                                                    "isNPC",
+                                                    "href",
+                                                    "id"
+                                                ],
+                                                "type": "object"
+                                            }
+                                        },
+                                        "required": [
+                                            "character",
+                                            "bidAmount"
+                                        ],
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                },
+                                "solarSystem": {
+                                    "id": "solarSystem",
+                                    "properties": {
+                                        "href": {
+                                            "description": "Link to the solar system resource.",
+                                            "id": "href",
+                                            "type": "string"
+                                        },
+                                        "id": {
+                                            "description": "ID for solar system.",
+                                            "id": "id",
+                                            "type": "integer"
+                                        },
+                                        "name": {
+                                            "description": "String name for solar system.",
+                                            "id": "name",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "href",
+                                        "id",
+                                        "name"
+                                    ],
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "characterBids",
+                                "solarSystem",
+                                "bidAmount"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "specialization": {
+                        "id": "specialization",
+                        "properties": {
+                            "href": {
+                                "id": "href",
+                                "type": "string"
+                            },
+                            "id": {
+                                "id": "id",
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "href",
+                            "id"
+                        ],
+                        "type": "object"
+                    },
+                    "workers": {
+                        "id": "workers",
+                        "items": {
+                            "id": "0",
+                            "properties": {
+                                "bonus": {
+                                    "id": "bonus",
+                                    "properties": {
+                                        "bonusType": {
+                                            "id": "bonusType",
+                                            "type": "string"
+                                        },
+                                        "id": {
+                                            "description": "ID of the bonus type",
+                                            "id": "id",
+                                            "type": "integer"
+                                        },
+                                        "value": {
+                                            "description": "value of the bonus",
+                                            "id": "value",
+                                            "properties": {
+                                            },
+                                            "required": [
+                                            ],
+                                            "type": "object"
+                                        }
+                                    },
+                                    "required": [
+                                        "bonusType",
+                                        "id",
+                                        "value"
+                                    ],
+                                    "type": "object"
+                                },
+                                "specialization": {
+                                    "id": "specialization",
+                                    "properties": {
+                                        "href": {
+                                            "id": "href",
+                                            "type": "string"
+                                        },
+                                        "id": {
+                                            "id": "id",
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "href",
+                                        "id"
+                                    ],
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "bonus",
+                                "specialization"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "solarSystem",
+                    "specialization",
+                    "creationTime",
+                    "workers",
+                    "expiryTime",
+                    "activity",
+                    "costModifier",
+                    "id",
+                    "name"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "next": {
+            "id": "next",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "pageCount": {
+            "id": "pageCount",
+            "type": "integer"
+        },
+        "previous": {
+            "id": "previous",
+            "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "href"
+            ],
+            "type": "object"
+        },
+        "totalCount": {
+            "id": "totalCount",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "items"
+    ],
+    "type": "object"
+}

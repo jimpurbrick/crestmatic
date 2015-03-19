@@ -8,54 +8,46 @@
                 "id": "0",
                 "properties": {
                     "description": {
-                        "description": "The market group's description",
+                        "description": "Description of the race",
                         "id": "description",
                         "type": "string"
                     },
                     "href": {
-                        "description": "A URI for this market group",
+                        "description": "A reference to the race",
                         "id": "href",
                         "type": "string"
                     },
+                    "icon": {
+                        "description": "Reference to the icon that represents this race",
+                        "id": "icon",
+                        "properties": {
+                            "href": {
+                                "id": "href",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "href"
+                        ],
+                        "type": "object"
+                    },
+                    "id": {
+                        "description": "Numerical identifier for the race",
+                        "id": "id",
+                        "type": "integer"
+                    },
                     "name": {
-                        "description": "The market group's name",
+                        "description": "Name of the race",
                         "id": "name",
                         "type": "string"
-                    },
-                    "parentGroup": {
-                        "description": "A reference to the parent market group",
-                        "id": "parentGroup",
-                        "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "href"
-                        ],
-                        "type": "object"
-                    },
-                    "types": {
-                        "description": "A reference to the list of types available in this market group",
-                        "id": "types",
-                        "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "href"
-                        ],
-                        "type": "object"
                     }
                 },
                 "required": [
-                    "href",
                     "name",
-                    "types",
-                    "description"
+                    "href",
+                    "description",
+                    "icon",
+                    "id"
                 ],
                 "type": "object"
             },

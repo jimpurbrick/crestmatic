@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "dark": {
+            "description": "All content that is dark and should be downloaded in the background.",
+            "id": "dark",
+            "items": {
+                "description": "All content that is dark and should be downloaded in the background.",
+                "id": "0",
+                "properties": {
+                    "bundle": {
+                        "description": "The URL for the bundle definition",
+                        "id": "bundle",
+                        "properties": {
+                            "href": {
+                                "id": "href",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "href"
+                        ],
+                        "type": "object"
+                    },
+                    "priority": {
+                        "description": "The priority of the asset. 0 being least priority and MAX_INT being highest.",
+                        "id": "priority",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "priority",
+                    "bundle"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "live": {
+            "description": "All content that is live and must be active at all times. The order\n                               of bundles is significant. Those list last, will overshadow those\n                               listed before it.",
+            "id": "live",
+            "items": {
+                "description": "All content that is live and must be active at all times. The order\n                               of bundles is significant. Those list last, will overshadow those\n                               listed before it.",
+                "id": "0",
+                "properties": {
+                    "bundle": {
+                        "description": "The URL for the bundle definition",
+                        "id": "bundle",
+                        "properties": {
+                            "href": {
+                                "id": "href",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "href"
+                        ],
+                        "type": "object"
+                    },
+                    "priority": {
+                        "description": "The priority of the asset. 0 being least priority and MAX_INT being highest.",
+                        "id": "priority",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "priority",
+                    "bundle"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "dark",
+        "live"
+    ],
+    "type": "object"
+}

@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "access": {
+            "description": "Chat channel access restrictions.",
+            "id": "access",
+            "type": "string"
+        },
+        "create": {
+            "description": "If this channel does not exist, should we create it.",
+            "id": "create",
+            "properties": {
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "delayed": {
+            "description": "If the member list for this channel operates in delayed mode.",
+            "id": "delayed",
+            "properties": {
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "join": {
+            "description": "If this channel already exists, should we join it.",
+            "id": "join",
+            "properties": {
+            },
+            "required": [
+            ],
+            "type": "object"
+        },
+        "motd": {
+            "description": "Channel message of the day.",
+            "id": "motd",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the channel.",
+            "id": "name",
+            "type": "string"
+        },
+        "password": {
+            "description": "Password of the channel.",
+            "id": "password",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "type": "object"
+}

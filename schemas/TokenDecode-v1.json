@@ -2,8 +2,9 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "/",
     "properties": {
-        "boss": {
-            "id": "boss",
+        "character": {
+            "description": "Reference to the character bound to this token",
+            "id": "character",
             "properties": {
                 "href": {
                     "id": "href",
@@ -15,26 +16,24 @@
             ],
             "type": "object"
         },
-        "locked": {
-            "id": "locked",
+        "user": {
+            "description": "Reference to the user bound to this token",
+            "id": "user",
             "properties": {
+                "href": {
+                    "id": "href",
+                    "type": "string"
+                },
+                "id": {
+                    "id": "id",
+                    "type": "integer"
+                }
             },
             "required": [
+                "href",
+                "id"
             ],
             "type": "object"
-        },
-        "name": {
-            "id": "name",
-            "type": "string"
-        },
-        "region": {
-            "id": "region",
-            "type": "string"
-        },
-        "visibility": {
-            "description": "Allowed values are 'public', 'private', 'corporation', 'alliance'",
-            "id": "visibility",
-            "type": "string"
         }
     },
     "required": [

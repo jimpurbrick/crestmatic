@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/",
+    "properties": {
+        "entries": {
+            "description": "Array of teams entered in this tournament",
+            "id": "entries",
+            "items": {
+                "description": "Array of teams entered in this tournament",
+                "id": "0",
+                "properties": {
+                    "href": {
+                        "id": "href",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "name of the team",
+                        "id": "name",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "href"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "membershipCutoff": {
+            "description": "Corp/Alliance minimal join date",
+            "id": "membershipCutoff",
+            "type": "string"
+        },
+        "name": {
+            "description": "The tournaments name",
+            "id": "name",
+            "type": "string"
+        },
+        "type": {
+            "description": "The tournaments type",
+            "id": "type",
+            "type": "string"
+        }
+    },
+    "required": [
+        "type",
+        "name",
+        "entries"
+    ],
+    "type": "object"
+}

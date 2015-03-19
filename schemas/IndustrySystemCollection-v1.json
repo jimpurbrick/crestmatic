@@ -7,47 +7,16 @@
             "items": {
                 "id": "0",
                 "properties": {
-                    "marketGroup": {
-                        "description": "A reference to the market group this type belongs in",
-                        "id": "marketGroup",
+                    "solarSystem": {
+                        "description": "Solar system.",
+                        "id": "solarSystem",
                         "properties": {
                             "href": {
                                 "id": "href",
                                 "type": "string"
                             },
                             "id": {
-                                "id": "id",
-                                "type": "integer"
-                            }
-                        },
-                        "required": [
-                            "href",
-                            "id"
-                        ],
-                        "type": "object"
-                    },
-                    "type": {
-                        "description": "The actual static type referenced by this market type",
-                        "id": "type",
-                        "properties": {
-                            "href": {
-                                "id": "href",
-                                "type": "string"
-                            },
-                            "icon": {
-                                "id": "icon",
-                                "properties": {
-                                    "href": {
-                                        "id": "href",
-                                        "type": "string"
-                                    }
-                                },
-                                "required": [
-                                    "href"
-                                ],
-                                "type": "object"
-                            },
-                            "id": {
+                                "description": "solarSystemID for the system the team resides in.",
                                 "id": "id",
                                 "type": "integer"
                             },
@@ -59,15 +28,48 @@
                         "required": [
                             "href",
                             "id",
-                            "name",
-                            "icon"
+                            "name"
                         ],
                         "type": "object"
+                    },
+                    "systemCostIndices": {
+                        "id": "systemCostIndices",
+                        "items": {
+                            "id": "0",
+                            "properties": {
+                                "activityID": {
+                                    "description": "id of the activty",
+                                    "id": "activityID",
+                                    "type": "integer"
+                                },
+                                "activityName": {
+                                    "description": "name of the activity",
+                                    "id": "activityName",
+                                    "type": "string"
+                                },
+                                "costIndex": {
+                                    "description": "value of the index",
+                                    "id": "costIndex",
+                                    "properties": {
+                                    },
+                                    "required": [
+                                    ],
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "costIndex",
+                                "activityID",
+                                "activityName"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
                     }
                 },
                 "required": [
-                    "marketGroup",
-                    "type"
+                    "systemCostIndices",
+                    "solarSystem"
                 ],
                 "type": "object"
             },
