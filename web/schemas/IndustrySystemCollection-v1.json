@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "items": {
+      "id": "items",
+      "items": {
+        "id": "0",
+        "properties": {
+          "solarSystem": {
+            "description": "Solar system.",
+            "id": "solarSystem",
+            "properties": {
+              "href": {
+                "id": "href",
+                "type": "string"
+              },
+              "id": {
+                "description": "solarSystemID for the system the team resides in.",
+                "id": "id",
+                "type": "integer"
+              },
+              "name": {
+                "id": "name",
+                "type": "string"
+              }
+            },
+            "required": [
+              "href",
+              "id",
+              "name"
+            ],
+            "type": "object"
+          },
+          "systemCostIndices": {
+            "id": "systemCostIndices",
+            "items": {
+              "id": "0",
+              "properties": {
+                "activityID": {
+                  "description": "id of the activty",
+                  "id": "activityID",
+                  "type": "integer"
+                },
+                "activityName": {
+                  "description": "name of the activity",
+                  "id": "activityName",
+                  "type": "string"
+                },
+                "costIndex": {
+                  "description": "value of the index",
+                  "id": "costIndex",
+                  "properties": {},
+                  "required": [],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "costIndex",
+                "activityID",
+                "activityName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "systemCostIndices",
+          "solarSystem"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "next": {
+      "id": "next",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "pageCount": {
+      "id": "pageCount",
+      "type": "integer"
+    },
+    "previous": {
+      "id": "previous",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "totalCount": {
+      "id": "totalCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "type": "object"
+}

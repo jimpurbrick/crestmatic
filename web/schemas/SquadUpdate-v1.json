@@ -16,7 +16,10 @@
       "type": "object"
     },
     "locked": {
-      "id": "locked"
+      "id": "locked",
+      "properties": {},
+      "required": [],
+      "type": "object"
     },
     "name": {
       "id": "name",

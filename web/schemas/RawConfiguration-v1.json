@@ -4,7 +4,10 @@
   "properties": {
     "allowUserCorporation": {
       "description": "Use user corporations",
-      "id": "allowUserCorporation"
+      "id": "allowUserCorporation",
+      "properties": {},
+      "required": [],
+      "type": "object"
     },
     "remoteLogConfig": {
       "description": "Remote logging configuration info.",

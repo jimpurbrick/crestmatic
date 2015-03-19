@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "items": {
+      "id": "items",
+      "items": {
+        "id": "0",
+        "properties": {
+          "href": {
+            "id": "href",
+            "type": "string"
+          },
+          "image": {
+            "id": "image",
+            "properties": {
+              "gender": {
+                "id": "gender",
+                "type": "integer"
+              },
+              "href": {
+                "id": "href",
+                "type": "string"
+              },
+              "id": {
+                "id": "id",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gender",
+              "href",
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "image",
+          "href"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "next": {
+      "id": "next",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "pageCount": {
+      "id": "pageCount",
+      "type": "integer"
+    },
+    "previous": {
+      "id": "previous",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "totalCount": {
+      "id": "totalCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "items": {
+      "id": "items",
+      "items": {
+        "id": "0",
+        "properties": {
+          "description": {
+            "description": "Description of the race",
+            "id": "description",
+            "type": "string"
+          },
+          "href": {
+            "description": "A reference to the race",
+            "id": "href",
+            "type": "string"
+          },
+          "name": {
+            "description": "Name of the race",
+            "id": "name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "href",
+          "name",
+          "description"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "next": {
+      "id": "next",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "pageCount": {
+      "id": "pageCount",
+      "type": "integer"
+    },
+    "previous": {
+      "id": "previous",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "totalCount": {
+      "id": "totalCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "type": "object"
+}

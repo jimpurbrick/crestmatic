@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "items": {
+      "id": "items",
+      "items": {
+        "id": "0",
+        "properties": {
+          "href": {
+            "description": "Link to a single alliance",
+            "id": "href",
+            "properties": {
+              "href": {
+                "id": "href",
+                "type": "string"
+              },
+              "id": {
+                "id": "id",
+                "type": "integer"
+              },
+              "name": {
+                "description": "Name of the alliance",
+                "id": "name",
+                "type": "string"
+              },
+              "shortName": {
+                "id": "shortName",
+                "type": "string"
+              }
+            },
+            "required": [
+              "shortName",
+              "href",
+              "id",
+              "name"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "href"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "next": {
+      "id": "next",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "pageCount": {
+      "id": "pageCount",
+      "type": "integer"
+    },
+    "previous": {
+      "id": "previous",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "totalCount": {
+      "id": "totalCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "type": "object"
+}

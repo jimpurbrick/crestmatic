@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "character": {
+      "description": "Reference to the character bound to this token",
+      "id": "character",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "user": {
+      "description": "Reference to the user bound to this token",
+      "id": "user",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        },
+        "id": {
+          "id": "id",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "href",
+        "id"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [],
+  "type": "object"
+}
