@@ -1,0 +1,28 @@
+{
+  "name": "crestmatic",
+  "version": "0.0.1",
+  "description": "A Matic project used to generate CREST documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimpurbrick/crestmatic.git"
+  },
+  "keywords": [
+    "eve",
+    "online",
+    "json",
+    "schema",
+    "crest",
+    "matic",
+    "documentation"
+  ],
+  "author": "Jim Purbrick <jimpurbrick@gmail.com> (http://jimpurbrick.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimpurbrick/crestmatic/issues"
+  },
+  "homepage": "https://github.com/jimpurbrick/crestmatic#readme"
+}
