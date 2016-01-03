@@ -1,30 +1,4 @@
 crestmatic
 ==========
 
-A matic project used to generate CREST documentation.
-
-## Dependencies
-
-To build this example you will need to install the following two node packages:
-
-[Matic](https://github.com/mattyod/matic)
-
-and
-
-[Jade](https://github.com/visionmedia/jade)
-
-## Installation
-Then you can download this repository with
-
-```sh
-git clone https://github.com/mattyod/matic-draft4-example
-```
-
-## Building the example docs
-Then simply navigate into the newly cloned example folder and run:
-
-    matic
-
-You should now have a new folder called 'web' within the sample project. Within this should be a file called index.html, open this with a browser and view the generated documentation.
-
-[An example of the output](http://mattyod.github.com/matic-draft4-example/).
+A documentation generator for [EVE Online](http://www.eveonline.com/) which uses [crestschema](https://github.com/jimpurbrick/crestschema) to generate [JSON Schema](http://json-schema.org/) from the self describing [CREST API](https://wiki.eveonline.com/en/wiki/CREST_Getting_Started) discovered by the [crestschemaspider.js](https://github.com/jimpurbrick/crestschema/blob/master/crestschemaspider.js) [NODE](https://nodejs.org/) application. The documentation is then generated from the JSON schema using [Matic]. [nightli.es](https://nightli.es/) is used to trigger [Travis](https://travis-ci.org/jimpurbrick/crestmatic) builds every night which push to [gh-pages](jimpurbrick.com/crestmatic/web/) to keep the documentation up to date.
