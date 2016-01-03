@@ -1,8 +1,17 @@
 language: node_js
 node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
+- '0.10'
+- iojs
+deploy:
+  provider: releases
+  api_key:
+    secure: mhPLpWBU6oVC0KeGTzywMjHRFrV5mhm0469C5TCZjca1Eb3DCRhRS+SyXwXZCrvSWSmZ+OpnCQpM0YZoxokGQdj4ugPDsDhLjMBVo0AKYtcDR4nedkZlOrPaEm4xHc38XwfDkocScbtIBnmsi4NMvntl4o3i0gpqrU+lZNatRrfMfZqzP66rjKuR6OmXwGnhrEh/gJ8qkMwQ2OB7WG5VyCU6gCeAuminHoCcgcWkdez4GCfxHrw2IE0rmNx76tuJzJydsVi88yhdgmpaHMZvO+lYdGtjaglnsPm2H74155PUflR+eZzYrUwNYymLwY/WLGLMx2x+yespI7ERdc+sidmXM+bzUxjypU7yN39KXL4+FnzrY/owE+HC2CbDwvforQpy+/bnAGP2SGjgAkAPXN9OUuJw3C0+W09SC0jMnQAAbkSlT4q4UiUecaCtvgrWdEOJmLTBtaf9HVYWs/4/H4amPa21h6IyWpU73tov9jJeOH1Sc50uJ23iYtRc0Bvhw0TboHBLkO6ln8JUqD4EYntrp3+RorFStbf2yW46njweWq8+XjPeXGE9K3baNeqeBgjja0KNlzrJ9Kte7TX7KtgOfBVLKTbpsCxXYn8csJhmQMFSIOE3gPS2rnIq/j36myVBCgSkFAbyNq3p3ipDC9vu0NyXLCbNjReQH2PlEj4=
+  file:
+    - schemas/*-v*.json
+    - web/*.html
+    - web/schemas/*-v*.json
+  skip_cleanup: true
