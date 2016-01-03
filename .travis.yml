@@ -6,12 +6,8 @@ node_js:
 - '0.11'
 - '0.10'
 - iojs
-deploy:
-  provider: releases
-  api_key:
-    secure: mhPLpWBU6oVC0KeGTzywMjHRFrV5mhm0469C5TCZjca1Eb3DCRhRS+SyXwXZCrvSWSmZ+OpnCQpM0YZoxokGQdj4ugPDsDhLjMBVo0AKYtcDR4nedkZlOrPaEm4xHc38XwfDkocScbtIBnmsi4NMvntl4o3i0gpqrU+lZNatRrfMfZqzP66rjKuR6OmXwGnhrEh/gJ8qkMwQ2OB7WG5VyCU6gCeAuminHoCcgcWkdez4GCfxHrw2IE0rmNx76tuJzJydsVi88yhdgmpaHMZvO+lYdGtjaglnsPm2H74155PUflR+eZzYrUwNYymLwY/WLGLMx2x+yespI7ERdc+sidmXM+bzUxjypU7yN39KXL4+FnzrY/owE+HC2CbDwvforQpy+/bnAGP2SGjgAkAPXN9OUuJw3C0+W09SC0jMnQAAbkSlT4q4UiUecaCtvgrWdEOJmLTBtaf9HVYWs/4/H4amPa21h6IyWpU73tov9jJeOH1Sc50uJ23iYtRc0Bvhw0TboHBLkO6ln8JUqD4EYntrp3+RorFStbf2yW46njweWq8+XjPeXGE9K3baNeqeBgjja0KNlzrJ9Kte7TX7KtgOfBVLKTbpsCxXYn8csJhmQMFSIOE3gPS2rnIq/j36myVBCgSkFAbyNq3p3ipDC9vu0NyXLCbNjReQH2PlEj4=
-  file:
-    - schemas/*-v*.json
-    - web/*.html
-    - web/schemas/*-v*.json
-  skip_cleanup: true
+after_success: bash ./deploy-gh-pages.sh
+env:
+  global:
+    GH_REF: github.com/jimpurbrick/crestmatic.git
+    secure: n6P+Yv93Aho7ikVZ0b0MG0kLPyIUJDdfXx6oohXD0nbVfcoPxaIwKzCN/jt4s2HYv++RwKYTxL+eqOT5w80xdmfyDsgh7CshO+FRZEnxGI08gVCxpqd/wJcHh5uGbG8q+tDax2ZlcD/wmC0TVcx2LiTYgwJpMDA6uACnuv5YAriSMSoCVTIIjL51O7/hmWispenQBtYrJknc0xjZvpD/hLXLSUMLtq5pnS+/4+wtsJloSIJ3ex3XLb932m9h143/nW+xlv7nrXTP/aHI/otpuFpW4XvmqKPvmlQhpI8UiKEgDfuglLzUSItqOuWNpTbzmSpKA/2fS6LT+MVXCwZjFm5AKz/NetZlwDZau0OejNsYou7Bh3L6EU2LnK2OjJYLkGpXlypcTLMaU8iUBx0S0Y9Hs7w7VWomMP/Ulvw0MITbZw7DGj64R96BkEsxt0jwi9q8J4fKHKBDLvSbD4xT5YeNUSgveP0w9mCtVN/+A8kNhOAJ9o+oe3SP9q3pFFDX4eeIQUyr/BkFhgI/mgr6goLluPjicC5ShMI/YYjutHIpAtzP16pRPF9mSapDQMnIrkh+XssrQELuM5foGgFjArsoQzcwnr8eVChLSYnbMvFi8msaTcIqpSsYzz7QBrQuO1t/Hg6o6XdzP7sMszS+qnCeI3m5X0EbkhWA8fKQW6U=
