@@ -4,11 +4,12 @@
   "description": "A Matic project used to generate CREST documentation.",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "node node_modules/crestschema/crestschemaspider.js https://crest.eveonline.com && mv *-v*.json schemas && node node_modules/matic/bin/matic"
   },
   "dependencies": {
     "matic": "0.5.1",
-    "jade": "1.11.0"
+    "jade": "1.11.0",
+    "crestschema": "git://github.com/jimpurbrick/crestschema.git"
   },
   "repository": {
     "type": "git",
