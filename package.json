@@ -4,7 +4,7 @@
   "description": "A Matic project used to generate CREST documentation.",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/crestschema/crestschemaspider.js https://crest.eveonline.com && mv *-v*.json schemas && rm -rf web && node node_modules/matic/bin/matic"
+    "test": "node node_modules/crestschema/crestschemaspider.js https://crest.eveonline.com && mkdir schemas && mv *-v*.json schemas && node node_modules/matic/bin/matic"
   },
   "dependencies": {
     "matic": "0.5.1",
