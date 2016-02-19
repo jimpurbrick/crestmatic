@@ -16,7 +16,6 @@ body {
   background: black url(https://community.eveonline.com/bitmaps/interface/community/bg.jpg) top right no-repeat;
 }
 article {
-  border: 1px solid #666666;
   background: black;
   margin: 40px;
   padding: 40px;
@@ -49,7 +48,7 @@ footer {
   padding: 7px 0 0 0;
 }
 .required {
-  color: #ad0000;
+  color: #33DFFF;;
   position: absolute;
   font-size: 8px;
   left: -10px;
@@ -64,13 +63,13 @@ dt {
   font-weight: bold;
   position: relative;
   width: 200px;
-  color: #04C1FF;
+  color: #33DFFF;;
   clear: left;
   float: left;
   margin: 0 0 7px 3px;
 }
 dt.parent {
-  color: #09c;
+  color: #33DFFF;
   cursor: pointer;
 }
 dd {
@@ -102,10 +101,10 @@ li {
   position: relative;
 }
 li:nth-child(odd) {
-  background: #777;
+  background: #555;
 }
 li:nth-child(even) {
-  background: #888;
+  background: #333;
 }
 h1 {
   color: #33DFFF;
