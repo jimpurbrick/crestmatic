@@ -17,10 +17,12 @@ body {
 }
 article {
   background: black;
-  margin: 40px;
+  margin-left:auto;
+  margin-right:auto;
   padding: 40px;
-  border-radius: px;
+  border-radius: 6px;
   overflow: hidden;
+  width: 680px;
 }
 article > header {
   border-bottom: 1px solid #002633;

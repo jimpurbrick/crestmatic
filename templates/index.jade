@@ -7,9 +7,16 @@ html
   body.index
     article
       header
-        h1 CREST Documentation&nbsp;
+        h1 CREST&nbsp;
           a(href="https://travis-ci.org/jimpurbrick/crestmatic")
             img(alt="Build Status" src="https://travis-ci.org/jimpurbrick/crestmatic.svg")
+
+	p
+	  | CREST (Carbon REST) is a&nbsp;
+	  a(href="http://web.archive.org/web/20131222060521/http://en.wikipedia.org/wiki/Representational_state_transfer")RESTful&nbsp;
+	  a(href="http://web.archive.org/web/20131222060521/http://en.wikipedia.org/wiki/Hypermedia")hypermedia&nbsp;
+	  a(href="http://web.archive.org/web/20131222060521/http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")HTTP&nbsp;
+	  | API that enables read and write access to parts of the EVE universe.
 
         h2 Resources
 
@@ -68,7 +75,7 @@ html
           pairs have default values which will be used when a value is
           not provided.
 
-	p.  
+	p.
           The structure of all representations used by the CREST API
 	  are described below in human readable HTML and machine
 	  readable JSON schema formats. The schemas and documentation
@@ -95,14 +102,26 @@ html
           receive responses in by providing the Accept-Language header
           with their requests.
 
-        h2 More Information
+        h2 Examples
 
         p
-          | An example Javascript client that demonstrates how to use CREST can be found here&nbsp;
+          | An example JavaScript client that demonstrates how to use CREST can be found here&nbsp;
           a(href="http://jimpurbrick.com/contactjs") http://jimpurbrick.com/contactjs
           |. The open source code for the example client is available here&nbsp;
           a(href="https://github.com/jimpurbrick/contactjs") https://github.com/jimpurbrick/contactjs
-          |. Presentations describing the design and use of CREST can be found&nbsp;
+          |.
+	  a(href="jimpurbrick.com/crestexplorerjs/") crestexplorer&nbsp;
+	  | is a similar JavaScript client which allows the CREST API to be explored
+	  | and URLs to nicely rendered views of resources to be shared. The open source code can
+	  | be found here&nbsp;
+	  a(href="https://github.com/jimpurbrick/crestexplorerjs")https://github.com/jimpurbrick/crestexplorerjs.
+	  a(href="https://github.com/jimpurbrick/crestschema") crestschema&nbsp;
+	  | is a JavaScript library which converts the descriptions of representations
+          | returned by OPTIONS requests made to CREST resources in to JSON schemas.
+          | The schemas can then either be used to generate client code, or crestschema
+          | can be used directly by JavaScript clients to generate and validate schemas
+	  | dynamically.
+          | Presentations describing the design and use of CREST can be found&nbsp;
           a(href="http://bambuser.com/v/2494220") here&nbsp;
           | and&nbsp;
           a(href="https://www.youtube.com/watch?v=QMQOjUjrZIo") here
