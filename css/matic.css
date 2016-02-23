@@ -17,6 +17,7 @@ body {
 }
 article {
   background: black;
+  margin-top: 40px;
   margin-left:auto;
   margin-right:auto;
   padding: 40px;
