@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "properties": {
+    "authEndpoint": {
+      "description": "The URI to use for authentication",
+      "id": "authEndpoint",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "decode": {
+      "description": "endpoint to decode the current oAuth token. Will return character/user links",
+      "id": "decode",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "dogma": {
+      "id": "dogma",
+      "properties": {
+        "attributes": {
+          "description": "A list of all dogma attributes.",
+          "id": "attributes",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "required": [
+            "href"
+          ],
+          "type": "object"
+        },
+        "effects": {
+          "description": "A list of all dogma effects.",
+          "id": "effects",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "required": [
+            "href"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "attributes",
+        "effects"
+      ],
+      "type": "object"
+    },
+    "itemCategories": {
+      "description": "Inventory categories for the EVE universe",
+      "id": "itemCategories",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "itemGroups": {
+      "description": "Inventory groups for the EVE universe",
+      "id": "itemGroups",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "itemTypes": {
+      "description": "Item types in the EVE universe",
+      "id": "itemTypes",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "serverName": {
+      "description": "The server name",
+      "id": "serverName",
+      "type": "string"
+    },
+    "serverVersion": {
+      "description": "The server version",
+      "id": "serverVersion",
+      "type": "string"
+    },
+    "serviceStatus": {
+      "description": "Eve Online status",
+      "id": "serviceStatus",
+      "type": "string"
+    },
+    "time": {
+      "description": "Reference to the Time resource",
+      "id": "time",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "tournaments": {
+      "description": "EVE Online tournaments resource",
+      "id": "tournaments",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    },
+    "userCount": {
+      "description": "The current count of online users for Eve Online",
+      "id": "userCount",
+      "type": "integer"
+    },
+    "virtualGoodStore": {
+      "description": "Link to the virtual good store",
+      "id": "virtualGoodStore",
+      "properties": {
+        "href": {
+          "id": "href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "decode",
+    "tournaments",
+    "serverVersion",
+    "itemCategories",
+    "authEndpoint",
+    "dogma",
+    "time",
+    "serverName",
+    "serviceStatus",
+    "itemGroups",
+    "itemTypes",
+    "userCount"
+  ],
+  "type": "object"
+}

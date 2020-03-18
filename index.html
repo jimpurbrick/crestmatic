@@ -1,0 +1,65 @@
+<!DOCTYPE html><head><link rel="stylesheet" href="css/matic.css"></head><html><body class="index"><article><header><h1>CREST&nbsp;<a href="https://travis-ci.org/jimpurbrick/crestmatic"><img alt="Build Status" src="https://travis-ci.org/jimpurbrick/crestmatic.svg"></a></h1><p>CREST (Carbon REST) is a&nbsp;<a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful&nbsp;</a><a href="http://en.wikipedia.org/wiki/Hypermedia">hypermedia&nbsp;</a><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP&nbsp;</a>API that enables read and write access to parts of the EVE universe.</p><h2>Resources</h2><p>Things in the EVE universe are exposed as addressable
+resources with a canonical URI. A representation of a
+resource can be obtained by making an HTTP GET request to
+the resource URI. Resources may be updated by making PUT
+requests to their URI and removed by making DELETE requests
+to their URI.
+</p><p>All resources are reachable from the root API entry point
+URI. Clients should not construct URIs, but instead follow
+URIs included in representations they have received. URIs
+may be stored as bookmarks, shared in IMs, sent as emails
+and published on web sites. CCP will endevour to support
+URIs as permalinks, but client applications should be able
+to cope with URIs becoming invalid as the API evolves and
+resources may be served from different locations just as web
+browsers cope with broken links.
+</p><h2>Representations</h2><p>Resources are represented as hypermedia documents which
+link to related resources. The structure of representations
+are described by media types. Clients specify the
+representation they would like to received using the Accept
+header of their request and specify which representations
+they are sending in the Content-Type header.
+</p><p>Representations may be extended to add new relationships
+and functionality, so clients must ignore all extra data
+they receive. Representations will never rename or remove
+attributes.
+</p><p>Where renaming or removing attributes is required to
+support new functionality, a new version of the
+representation will be defined as a new media type and the
+old representation will continue to be supported for as long
+as possible. The newest version of a representation will be
+served by default to ensure that new clients are developed
+using the newest representations. Clients that are widely
+distributed and not automatically updated should always
+supply Accept headers if they rely on the structure of
+representations.
+</p><p>Representations are formatted as JSON objects containing
+name/value pairs and nested objects and arrays. Some
+name/value pairs are optional, meaning that they may be
+omitted by senders when not applicable. Some name/value
+pairs have default values which will be used when a value is
+not provided.
+</p><p>The structure of all representations used by the CREST API
+are described below in human readable HTML and machine
+readable JSON schema formats. The schemas and documentation
+are generated nightly by a spider making OPTIONS requests to
+the self-describing CREST API.
+</p><h2>Authorization</h2><p>Requests to non-public parts of the API are made on behalf
+of a character. Client applications are further restricted
+by the set of scopes a player has allowed the application to
+use on behalf of a character. When making a request to a
+non-public part of the API, client applications must supply
+an OAuth 2 token granted by login.eveonline.com in the
+Authorization header. If the character is not allowed to
+make the request, or the token does not have the correct
+scopes, the request will be denied.
+</p><h2>Localization</h2><p>Clients may specify the languages they would like to
+receive responses in by providing the Accept-Language header
+with their requests.
+</p><h2>Examples</h2><p>An example JavaScript client that demonstrates how to use CREST can be found here&nbsp;<a href="http://jimpurbrick.com/contactjs">http://jimpurbrick.com/contactjs</a>. The open source code for the example client is available here&nbsp;<a href="https://github.com/jimpurbrick/contactjs">https://github.com/jimpurbrick/contactjs</a>.&nbsp;</p><p><a href="http://jimpurbrick.com/crestexplorerjs/#https://crest.eveonline.com">crestexplorer&nbsp;</a>is a similar JavaScript client which allows the CREST API to be explored
+and URLs to nicely rendered views of resources to be shared. The open source code can
+be found here&nbsp;<a href="https://github.com/jimpurbrick/crestexplorerjs">https://github.com/jimpurbrick/crestexplorerjs.</a></p><p><a href="https://github.com/jimpurbrick/crestschema">crestschema&nbsp;</a>is a JavaScript library which converts the descriptions of representations
+returned by OPTIONS requests made to CREST resources in to JSON schemas.
+The schemas can then either be used to generate client code, or crestschema
+can be used directly by JavaScript clients to generate and validate schemas
+dynamically.</p><h2>Information</h2><p>Presentations describing the design and use of CREST can be found&nbsp;<a href="http://bambuser.com/v/2494220">here&nbsp;</a>and&nbsp;<a href="https://www.youtube.com/watch?v=QMQOjUjrZIo">here</a>. Official CCP developer resources can be found&nbsp;<a href="https://developers.eveonline.com/">here</a>.</p></header><section><h2>Representations</h2><ul><li><a href="Api-v5.html">Api-v5.html</a></li></ul><h2>schemas</h2><ul><li><a href="schemas/Api-v5.json">Api-v5.json</a></li></ul></section><footer><p>Built with <a href="https://www.github.com/mattyod/matic/">Matic.js</a>, <a href="https://github.com/jimpurbrick/crestschema">crestschema</a> and  <a href="https://nightli.es/">nightli.es</a> by <a href="http://jimpurbrick.com">Jim Purbrick</a>. ISK donations gratefully accepted by Capt Out.</p></footer></article></body></html>
